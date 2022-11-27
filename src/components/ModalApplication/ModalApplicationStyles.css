@@ -1,0 +1,140 @@
+.ModalApplication {
+    z-index: -1;
+    display: none;
+}
+
+.ModalApplication__body {
+    display: none;
+}
+
+.ModalApplication-active {
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.ModalApplication__body-active {
+    padding: 30px;
+    flex-direction: column;
+    width: 560px;
+    height: 379px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    font-size: 24px;
+    line-height: 36px;
+    color: #777777;
+}   
+
+.ModalApplication__body-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ModalApplication__body-krest:hover {
+    cursor: pointer;
+}
+
+.ModalApplication__body-input {
+    margin-top: 45px;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    border: 0px;
+    border-bottom: 1px solid #DDDDDD;
+    outline: none;
+}
+
+.ModalApplication__body-input:focus {
+    margin-top: 45px;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    border: 0px;
+    border-bottom: 1px solid #15C6D2;
+    outline: none;
+}
+
+.ModalApplication__body-container-personaldata {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.ModalApplication__body-checkbox {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.ModalApplication__body-checkbox-active {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #15C6D2;
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.ModalApplication__body-checkbox-active::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #15C6D2;
+    bottom: 8px;
+    left: 4px;
+    transform: rotate(45deg);
+}
+
+.ModalApplication__body-checkbox-active::before {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 2px;
+    background-color: #15C6D2;
+    bottom: 12px;
+    right: -1px;
+    transform: rotate(-65deg);
+}
+
+.ModalApplication__body-personaldata {
+    margin-left: 20px;
+    display: flex;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.ModalApplication__body-personaldata-sub {
+    color: #15C6D2;
+}
+
+.ModalApplication__body-button {
+    background: #15C6D2;
+    border-radius: 500px;
+    display: flex;
+    margin: 30px auto;
+    transition: 0.22;
+    border: 1px solid #15C6D2;
+}
+
+.ModalApplication__body-button-text {
+    margin: 8px 170px;
+    color: white;
+    font-size: 18px;
+    transition: 0.22;
+}
+
+.ModalApplication__body-button:hover {
+    cursor: pointer;
+    transition: 0.22;
+    border: 2px solid #15C6D2;
+}

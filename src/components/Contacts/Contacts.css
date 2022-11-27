@@ -1,0 +1,90 @@
+.Contacts {
+    width: 100%;
+    height: 100vh;
+    background-color: #E3F2F7;
+    display: flex;
+    position: relative;
+}
+.Contacts__image {
+    height: 100%;
+    width: auto;
+}
+.Contacts__image-real {
+    height: 90%;
+}
+
+.Contacts__Arrow{
+    margin-left: -35px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Contacts__Arrow:hover{
+    cursor: pointer;
+}
+
+.Contacts__Krest {
+    min-width: 0;
+    display: none;
+    transition: 0.4ms;
+}
+
+.Contacts__Krest-active {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    transition: 0.4ms;
+}
+
+.Contacts__Krest-active:hover {
+    cursor: pointer;
+}
+
+.Contacts__body {
+    min-width: 1000px;
+    display: flex;
+    margin-left: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.4ms;
+}
+
+.Contacts__body-active {
+    min-width: 0;
+    width: 1000px;
+    display: flex;
+    margin-left: auto; 
+    transition: 0.4ms;
+}
+
+.Contacts__body-container-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.Contacts__body-container-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Contacts__body-title {
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 95px;
+    padding-bottom: 40px;
+    color: #15C6D2;
+}
+
+.Contacts__body-container-item {
+    font-size: 24px;
+    line-height: 48px;
+    color: #777777;
+}
+
+.Contacts__body-container-item-head {
+    font-weight: 700;
+}

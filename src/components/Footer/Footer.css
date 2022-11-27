@@ -1,0 +1,67 @@
+.footer {
+    background-color: rgba(21, 198, 210, 0.1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 23px;
+    height: 10%;
+    width: 100%;
+}
+
+.footer__list-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__list-left-telNumber {
+    margin-left: 80px;
+    margin-right: 40px;
+    font-weight: 550;
+    font-size: 16px;
+}
+
+.footer__list-left-whatsappIcon {
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 15px;
+}
+
+.footer__list-right {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.footer__list-right-item {
+    text-decoration: none;
+    padding: 23px;
+    font-size: 16px;
+    border-radius: 500px;
+
+}
+
+.footer__list-right-item:hover {
+    color: #15C6D2;
+}
+
+
+.footer__list-right-item-active {
+    background-color: white;
+    font-weight: 550;
+    padding: 23px;
+    font-size: 16px;
+    border-radius: 500px;
+}
+
+.footer__list-right-item-active:hover {
+    color: #15C6D2;
+}

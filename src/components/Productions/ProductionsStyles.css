@@ -1,0 +1,46 @@
+.Productions {
+    background-image: url('../../img/BluePageImage.png');
+    background-size: cover;
+    font-size: 24px;    
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+}
+.Productions__body {
+    margin: auto 0;
+    margin-top: 13%;
+    margin-left: auto;
+    right: 0px;
+    width: 50%;
+    padding: 0px 10%;
+    padding-right: 15%;
+}
+
+.Productions__body-title {
+    font-size: 80px;
+    line-height: 95px;
+}
+
+.Productions__body-text {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.Productions__body-modal {
+    border-width: 3px;
+    border: white;
+    border-style: solid;
+    border-radius: 500px;
+    padding: 20px;
+    margin-bottom: 50px;
+    width: 45%;
+}
+
+.Productions__body-modal:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+}

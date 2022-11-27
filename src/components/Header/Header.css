@@ -1,0 +1,40 @@
+.header {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}   
+
+.header__container {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    padding: 30px 80px;
+    margin-left: auto;
+}
+
+.header__item {
+    padding: 13px 30px;
+    font-size: 18px;
+    border-radius: 500px;
+    background-color: transparent;
+    transition: 0.22s;
+    cursor: pointer;
+}
+.header__item:hover {
+    background-color: rgba(21, 198, 210, 0.3);
+    transition: 0.22s;
+}
+
+.header__item-active {
+    padding: 13px 30px;
+    font-size: 18px;
+    border-radius: 500px;
+    transition: 0.22s;
+    cursor: pointer;
+    background-color: white;
+}
+
+.header__item.things {
+    background-color: rgba(21, 198, 210, 0.1);
+}

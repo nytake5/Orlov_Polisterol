@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import Polisterol from './components/Polisterol/Polisterol';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Specifications from './components/Specifications/Specifications';
+import Productions from './components/Productions/Productions';
+import Ware from './components/Ware/Ware';
+import Packaging from './components/Packaging/Packaging';
+import ChildrenToys from './components/ChildrenToys/ChildrenToys';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import Contacts from './components/Contacts/Contacts';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Polisterol />
+      <Specifications />
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={0}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log('slide change')}
+      >
+        <SwiperSlide> < Productions /> </SwiperSlide>
+        <SwiperSlide> < Ware /> </SwiperSlide>
+        <SwiperSlide> < Packaging /> </SwiperSlide>
+        <SwiperSlide> < ChildrenToys /> </SwiperSlide>
+      </Swiper>
+      <Contacts/>
+      <Footer />
     </div>
   );
 }
