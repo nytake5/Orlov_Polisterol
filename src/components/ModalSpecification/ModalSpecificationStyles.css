@@ -27,6 +27,7 @@
     font-size: 24px;
     line-height: 36px;
     color: #777777;
+    position: relative;
 }
 
 .ModalSpecification__body_swipper-item{
@@ -59,6 +60,9 @@
     justify-content: space-between;
     height: 30px;
     width: 30px;
+    position: fixed;
+    right: 19%;
+    z-index: 100;
 }
 
 .ModalSpecification__body-krest:hover {

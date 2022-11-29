@@ -9,7 +9,6 @@ import { swiperList } from '../../constants';
 import Krest from '../../img/Krest.svg'
 import React, { useEffect } from 'react';
 import Krug from '../../img/Krug.png'
-import { Virtual } from 'swiper';
 
 const ModalSpecification = (props) => {
     return (
@@ -18,8 +17,12 @@ const ModalSpecification = (props) => {
             <img className='ModalSpecification__body-krest' src={Krest} onClick={() => props.setVisible(false)} />
             <Swiper
                 className='ModalSpecification__body-swipper'
+                pagination={{ clickable: true }}
                 slidesPerView={7}
-                spaceBetween={40}
+                spaceBetween={30}
+                direction='vertical'
+                centeredSlides='2'
+                slideToClickedSlide
                 loop
             >
                 {swiperList.map(item => (

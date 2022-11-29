@@ -5,6 +5,7 @@
     width: 100%;
     height: 100vh;
     color: #15C6D2;
+    display: flex;
 }
 .Ware__body {
     margin-top: 10%;
@@ -37,7 +38,7 @@
     border-radius: 500px;
     padding: 20px;
     margin-bottom: 50px;
-    width: 45%;
+    width: 50%;
 }
 
 .Ware__body-modal:hover{
