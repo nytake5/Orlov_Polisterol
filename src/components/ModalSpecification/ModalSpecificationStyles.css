@@ -77,3 +77,7 @@
 .ModalSpecification__body-swipper-slide {
     margin: 10px 0;
 }
+
+.ModalSpecification__body_swipper-item:hover{
+    cursor: pointer;
+}
