@@ -5,6 +5,7 @@ import { footerList } from '../../constants';
 import Arrow from '../../img/Arrow.svg'
 import ModalApplication from '../ModalApplication/ModalApplication';
 import React, { useState } from 'react';
+import ModalSpecification from '../ModalSpecification/ModalSpecification';
 
 
 const Polisterol = () => {
@@ -16,7 +17,7 @@ const Polisterol = () => {
 
     return (
         <div className={'Polisterol'} id="Polisterol_id">
-            <ModalApplication visible={modalApp} setVisible={setModalApp}/>
+            <ModalSpecification visible={modalApp} setVisible={setModalApp}/>
             
             <div className="Polisterol__body">
                 <div className="Polisterol__body-text">

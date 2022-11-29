@@ -37,3 +37,35 @@ export const footerList = [
         text: 'Литьевая марка'
     },
 ]
+
+export const swiperList = [
+    {
+        leftText: 'Elongation, % ASTM D 638',
+        centerText: '2'
+    },
+    {
+        leftText: 'Flexural Strength, kgf/㎠ ASTM D 790',
+        centerText: '930'
+    },
+    {
+        leftText: 'Flexural Modulus, gf/㎠ ASTM D 790',
+        centerText: '38,000'
+    },
+    {
+        leftText: 'IZOD Impact Strength, kgf·cm/cm ASTM D 256',
+        centerText: '-'
+    },
+    {
+        leftText: 'Rockwell Hardness, /ASTM D 785',
+        centerText: '100'
+    },
+    {
+        leftText: 'M.I, g/10 min ASTM D 1238',
+        centerText: '8.6'
+    },
+    {
+        leftText: 'Vicat Softening, ℃ ASTM D 1525',
+        centerText: '96'
+    },
+    
+]

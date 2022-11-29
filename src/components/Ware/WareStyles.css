@@ -8,7 +8,7 @@
 }
 .Ware__body {
     margin-top: 10%;
-    float: right !important;
+    margin-left: auto;
     right: 0px;
     width: 50%;
     height: 100vh;
